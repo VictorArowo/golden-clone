@@ -1,0 +1,205 @@
+:root{
+  font-size: 62.5%
+}
+
+body{
+  width: 100%;
+}
+
+header{
+  background-color: @tertiary-bg-color;
+  .flex(row, flex-start, center);
+  flex: auto;
+  height: 5rem;
+  width: 100%;
+  padding: 0 5rem;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+
+
+  img{
+    margin-right: 10rem;
+  }
+
+  input{
+    width: 50rem;
+    margin-right: 0px;
+    height: 3rem;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 2rem;
+    color: #E1E1E1;
+    position: relative;
+    border: 1px solid #DBE0E3;
+    border-radius: 0.8rem;
+  }
+
+  .search-button{
+    i{
+      position: absolute;
+      left: 71rem;
+      top: 0.9rem;
+      font-size: 17px;
+      width: 2.3rem;
+      height: 3rem;
+      padding: 0 3rem;
+      padding-top: 5px;
+      border-top-right-radius: 0.8rem;
+      border-bottom-right-radius: 0.8rem;
+      &:hover{
+        background-color: @btn-1-color;
+      }
+    }
+  }
+
+
+  button{
+    width:8rem;
+    margin: 0 8px;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    height: 3rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5rem;
+
+    &.log-in{
+      background-color: @btn-2-color;
+    }
+    &.sign-up{
+      background-color: @btn-3-color;
+    }
+  }
+}
+
+.description{
+  background-color: @primary-bg-color;
+  height: 65rem;
+  .flex(row, space-around, center);
+  color: white;
+  h1{
+    font-size: 60px;
+  }
+  .text{
+    width: 45rem;
+  }
+  button{
+    height: 5rem;
+    background-color: @btn-1-color;
+    width: 25rem;
+    border: 1px solid @btn-1-color;
+    border-radius: 1rem;
+    color:white;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 30px;
+  }
+}
+
+button.feedback{
+  position: fixed;
+  //top: 75rem;
+  left: 130rem;
+  background-color: @btn-1-color;
+  border: 1px solid @btn-1-color;
+  border-radius: 5rem;
+  color:white;
+  font-size: 20px;
+  height: 5rem;
+  width: 20rem;
+
+}
+
+.description-2{
+  background-color: @secondary-bg-color;
+  height: 65rem;
+  .flex(row, space-around, center);
+  .text{
+    width: 45rem;
+  }
+  video{
+    width: 80rem;
+  }
+  button{
+    height: 5rem;
+    background-color: @btn-1-color;
+    width: 25rem;
+    border: 1px solid @btn-1-color;
+    border-radius: 1rem;
+    color:white;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 30px;
+  }
+}
+
+.join-us{
+  background-color: @tertiary-bg-color;
+  height: 65rem;
+  .flex(row, space-around, center);
+  color: black;
+  h1{
+    font-size: 60px;
+  }
+  .text{
+    width: 45rem;
+  }
+
+  button{
+    height: 5rem;
+    background-color: @btn-1-color;
+    width: 25rem;
+    border: 1px solid @btn-1-color;
+    border-radius: 1rem;
+    color:white;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 30px;
+  }
+}
+
+.companies{
+  background-color: @primary-bg-color;
+  height: 65rem;
+  .flex(column, flex-start, center);
+  color: white;
+  text-align: center;
+
+
+  button{
+    height: 5rem;
+    background-color: @btn-1-color;
+    width: 25rem;
+    border: 1px solid @btn-1-color;
+    border-radius: 1rem;
+    color:white;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 50px;
+  }
+
+
+  .grid{
+    width: 100rem;
+    height: 40rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+
+    .grid-element{
+      background-color: #2C3138;
+      border: 1px solid #686868;
+      p{
+        font-size: 20px;
+      }
+      i{
+        padding-top: 60px;
+        font-size: 40px;
+        color: #D2B051;
+      }
+
+      
+    }
+  }
+}
